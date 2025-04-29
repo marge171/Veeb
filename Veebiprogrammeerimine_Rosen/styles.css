@@ -1,0 +1,449 @@
+/* Kujundus */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;700&family=Roboto:wght@400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+	color: white;  
+}
+
+main {
+    flex-grow: 1;  
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+form {
+    background: #fff;
+    padding: 25px;
+    max-width: 450px;
+    margin: 20px auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin: 10px 0 5px;
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.center-buttons a {
+    margin: 10px;
+    padding: 15px 30px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.center-buttons a:hover {
+    background-color: #0056b3;
+}
+
+.loginupdate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Täidab kogu ekraani kõrguse */
+}
+
+.loginupdate div {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.hero {
+    position: relative;
+    background-image: url("login/images/autotaust.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.hero-text {
+    color: white;
+    text-align: center;
+    padding: 80px;
+    max-width: 900px;
+    z-index: 2;
+    position: relative;
+}
+
+.hero-text h1 {
+    font-size: 52px;
+    color: green;
+font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #ffffff;
+    color: #2c3e50;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e0e0e0;
+}
+nav.navbar {
+    z-index: 10;
+    position: relative;
+}
+
+body {
+    background-color: #2f2f2f;
+}
+
+
+.signup-title {
+    text-align: center;
+    color: #4CAF50;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+/* Üldine login-leht */
+.login-page {
+    background-color: #2f2f2f;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Login-formi stiil */
+.login-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* Login-section üldine stiil */
+.login-section {
+    height: 100vh;
+    background-color: #2f2f2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+/* Formi stiil */
+.login-section form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    color: #000;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* Input-kastide stiil */
+.login-section form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    color: #333; /* Tekstiks tumedam värv, et oleks paremini nähtav */
+}
+.login-section form input,
+.login-section label {
+    color: #b2b5b1; /* Muudab sisendi ja siltide värvi mustaks */
+}
+/* Button-i stiil */
+.login-section button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-section button:hover {
+    background-color: #45a049;
+}
+
+/* Errori sõnumite stiil */
+.login-section .error {
+    color: #ff7070; /* Punane värv vigade jaoks */
+    margin-top: 10px;
+}
+
+.back {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.forgot-link {
+    color: #00cc66;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-link:hover {
+    text-decoration: underline;
+    color: #00994d;
+}
+.forgot-password-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.forgot-password-container h2 {
+    text-align: center;
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.forgot-password-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.forgot-password-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.forgot-password-container button:hover {
+    background-color: #0056b3;
+}
+
+.forgot-password-container p {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.back-to-home {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.back-to-home:hover {
+    background-color: #ddd;
+}
+
+/* Registreerimislink */
+.register-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.register-link:hover {
+    text-decoration: underline;
+}
+.register-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: space-between;
+width: 100%;
+margin-top: 10px;
+
+}
+
+.register-container p {
+    margin-right: 10px; /* Lingi ja teksti vaheline kaugus */
+    font-size: 16px;
+}
+
+.register-link {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.register-link:hover {
+    text-decoration: underline;
+}
+
+/* Kõrgem vormi sisemus */
+form {
+    background: #fff;
+    padding: 25px;
+    max-width: 500px; /* Suurem vorm */
+    margin: 20px auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+body, p, h1, h2, h3, h4, h5, h6, a {
+    color: white;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; 
+}
+
+
+label {
+    color: white;          
+    font-weight: bold;     
+    display: block;       
+    margin-bottom: 5px;    
+}
+
+input, textarea {
+    background-color: black;
+    color: white;
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+}
+
+textarea {
+    height: 100px;        
+}
+
+.car-container .car img {
+    width: 300px;      /* Laius */
+    height: 300px;     /* Kõrgus */
+    object-fit: cover; 
+}
+.hero-text, .car-container h3, .car-container p {
+    color: white;  
+}
+
+/* Tausta ja teksti kontrasti suurendamiseks */
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5);  /* Tumedam kiht taustal */
+}
+.car-container .car img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;  
+}
+
